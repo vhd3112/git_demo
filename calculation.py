@@ -11,7 +11,9 @@ if __name__ == '__main__':
   f = int(input("choose function: \n\
         0. cal_rectangle_perimeter: \n\
         1. cal_rectangle_area: \n\
-        2. cal_circle_area: "))
+        2. cal_circle_area: "))  
+  multi = int(input("Add multiplier: "))
+
   if f == 0:
     a = int(input("Input value a: "))
     b = int(input("Input value b: "))
@@ -25,5 +27,5 @@ if __name__ == '__main__':
     result = cal_circle_area(r)
   else:
     result = "Wrong input"
-  print("\nResult: {}".format(result))
+  print("\nResult: {}".format(result*multi))
     
